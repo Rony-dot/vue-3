@@ -12,6 +12,16 @@
     <h1>Hello Vue :)</h1>
     <div id="app">
         <h1>{{message}}</h1>
+        <h2>{{name}}</h2>
+        <h2>{{age}}</h2>
+        <button v-on:click="age++">add</button> &nbsp;
+        <button @click="age--">subtract</button>  <br><br>
+        <button @click="changeMsg">Change the message</button> &nbsp;
+        <button @click="setMsg('parameter message from html template!')">Set the message</button> <br>
+        <br><br>
+        <button v-if="showTxt">show</button> &nbsp;
+        <button v-else>hide</button> <br>
+        <h1 v-if="showTxt">(Now showing) A message to play hide and seek!!</h1>
     </div>
 
     <script src="app.js"></script>
