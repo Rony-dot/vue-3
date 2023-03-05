@@ -14,6 +14,9 @@ const app = Vue.createApp({
         },
         setMsg(something){
             this.message = something
+        },
+        toggleTxt(){
+            this.showTxt = !this.showTxt
         }
     }
 })

@@ -19,8 +19,10 @@
         <button @click="changeMsg">Change the message</button> &nbsp;
         <button @click="setMsg('parameter message from html template!')">Set the message</button> <br>
         <br><br>
-        <button v-if="showTxt">show</button> &nbsp;
-        <button v-else>hide</button> <br>
+        <button @click="toggleTxt">
+            <span v-if="showTxt">hide</span>
+            <span v-else>show 2</span> <br>
+        </button>
         <h1 v-if="showTxt">(Now showing) A message to play hide and seek!!</h1>
     </div>
 
