@@ -5,7 +5,8 @@ const app = Vue.createApp({
             message: "test message from vue app.js",
             name: "Rakibul Hassan",
             age: 22,
-            showTxt: true
+            showTxt: true,
+            text: ""
         }
     },
     methods:{
@@ -17,6 +18,9 @@ const app = Vue.createApp({
         },
         toggleTxt(){
             this.showTxt = !this.showTxt
+        },
+        handleEvent(e){
+           console.log(e, e.type)
         }
     }
 })
