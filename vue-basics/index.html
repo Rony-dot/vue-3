@@ -24,6 +24,13 @@
             <span v-else>show 2</span> <br>
         </button>
         <h1 v-if="showTxt">(Now showing) A message to play hide and seek!!</h1>
+        <h1 v-show="showTxt">(Now showing) A message to play hide and seek!!</h1>
+        <!--
+            1) v-if and v-show does the same work, but behind the scene they are different
+            v-if takes the element out of the DOM completely when the statement is false, and again inserts the element in the DOM when the statement is true.
+            2) Whereas, v-show uses only the css to make it show and hide. it uses display:block when the statement is true, and display:none when the statement is false.
+
+        -->
     </div>
 
     <script src="app.js"></script>
