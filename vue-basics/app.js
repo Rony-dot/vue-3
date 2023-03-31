@@ -9,7 +9,14 @@ const app = Vue.createApp({
             text: "",
             x : 0,
             y : 0,
-            content: ""
+            content: "",
+            showBooks: true,
+            books: [
+                {title: "title of the book 1", author:"author of the book 1"},
+                {title: "title of the book 2", author:"author of the book 2"},
+                {title: "title of the book 3", author:"author of the book 3"},
+                {title: "title of the book 4", author:"author of the book 4"},
+            ]
         }
     },
     methods:{
